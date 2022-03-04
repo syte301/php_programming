@@ -1,0 +1,8 @@
+<?xml version='1.0'?>
+<root>
+	<worker>
+		<name>Коля</name>
+		<age>25</age>
+		<salary>1000</salary>
+	</worker>
+</root>
