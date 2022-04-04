@@ -6,7 +6,7 @@ interface iPost {
 }
 
 
-class Post implements iPost{
+final class Post implements iPost{
     private $title;
     private $text;
     public function __construct(string $title, string $text) {
@@ -22,7 +22,7 @@ class Post implements iPost{
 }
 
 
-class Lesson implements iPost {
+final class Lesson implements iPost {
     private $post;
     private $homework;
     public function __construct(Post $post, string $homework) {
@@ -41,7 +41,7 @@ class Lesson implements iPost {
 }
 
 
-class PaidLesson implements iPost {
+final class PaidLesson implements iPost {
     private $lesson;
     private $price;
     public function __construct(Lesson $lesson, float $price) {
