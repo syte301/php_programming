@@ -62,7 +62,7 @@ class PaidLesson extends Lesson
     public function __construct(string $title, string $text, string $homework, float $price)
     {
       parent::__construct($title,$text, $homework);
-      $this->price = $price;  
+      $this->price = $price;
     }
 
 
@@ -80,4 +80,4 @@ class PaidLesson extends Lesson
 
 
 $paidlesson = new PaidLesson('Урок о наследовании в PHP', 'Лол, кек, чебурек', 'Ложитесь спать, утро вечера мудренее', 99.90);
-var_dump($paidlesson);
+var_dump($paidlesson->getTitle());
